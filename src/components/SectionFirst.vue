@@ -65,7 +65,7 @@ export default {
   }
 }
 .container-data {
-  min-height: 31em;
+  min-height: 20em;
   align-self: stretch;
   justify-self: start;
   display: flex;
@@ -75,9 +75,8 @@ export default {
   text-align: start;
   padding: 0 3rem * 0.625;
   @media screen and (min-width: $tablet) {
-    padding-bottom: 3rem * 0.625;
     padding-left: 10rem * 0.625;
-    width: 75%;
+    width: 90%;
   }
   @media screen and (min-width: $notebook) {
     width: 100%;
@@ -107,18 +106,18 @@ h1 {
   margin: 0;
   font-weight: bold;
   color: $color-primary;
-  font-size: 2.7rem * 0.625;
+  font-size: 3rem * 0.625;
   @media screen and (min-width: $tablet) {
-    font-size: 3.2rem * 0.625;
+    font-size: 3.5rem * 0.625;
   }
   @media screen and (min-width: $notebook) {
-    font-size: 3.4rem * 0.625;
+    font-size: 4rem * 0.625;
   }
   @media screen and (min-width: $laptop) {
-    font-size: 3.8rem * 0.625;
+    font-size: 4.5rem * 0.625;
   }
   @media screen and (min-width: $desk) {
-    font-size: 4rem * 0.625;
+    font-size: 5rem * 0.625;
   }
   span {
     display: block;
@@ -130,16 +129,16 @@ p {
   font-size: 1.5rem * 0.625;
   line-height: 2rem * 0.625;
   @media screen and (min-width: $notebook) {
-    font-size: 1.4rem * 0.625;
+    font-size: 1.6rem * 0.625;
     line-height: 2.1rem * 0.625;
   }
   @media screen and (min-width: $laptop) {
-    font-size: 1.6rem * 0.625;
+    font-size: 1.75rem * 0.625;
     line-height: 2.3rem * 0.625;
     width: 85%;
   }
   @media screen and (min-width: $desk) {
-    font-size: 1.8rem * 0.625;
+    font-size: 1.9rem * 0.625;
     line-height: 2.5rem * 0.625;
     width: 95%;
   }

@@ -11,12 +11,8 @@
         <ManBike class="svg-imagen" />
       </template>
       <template v-slot:botons>
-        <a
-          href="../pdfs/reporte2-05-10.pdf"
-          download="Reporte2Mayo2010"
-        >
-          Descargar Archivo
-        </a>
+        <BottonApk />
+
       </template>
     </SectionTitle>
 
@@ -25,6 +21,7 @@
 
 <script>
 import ManBike from "@/components-svg/ManBike.vue";
+import BottonApk from "@/components/BottonApk.vue";
 import SectionTitle from "@/components/SectionFirst.vue";
 export default {
   name: "HelloWorld",
@@ -34,15 +31,18 @@ export default {
   components: {
     SectionTitle,
     ManBike,
+    BottonApk,
   },
   data() {
     return {
       SectionFirstData: {
         linkApp:
           "https://play.google.com/store/apps/details?id=app.dinamo.dinamo&hl=es&fbclid=IwAR0XT4Gf7vyDmZFqHyBUW5hw-hzlIdrqZTPgdoS_L13pjzWXXYZhVs25b5c",
-        tituloTop: "Arma tu",
-        tituloBottom: "Horario y siente la magia",
-        cuerpo: "Tambien disponible para android!",
+        tituloTop: "Elige un horario",
+        tituloBottom: "y renta una bicicleta",
+        cuerpo: `
+          Mini sistema para la renta de bicicletas para los distintos horarios que hay entre las 8:00 am y 8:00pm. 
+          Disponible tanto para Web y Móvil (Android).`,
       },
     };
   },
@@ -54,23 +54,26 @@ export default {
 @import "@/assets/styles/style.scss";
 
 .svg-imagen {
-  max-width: 95%;
-  height: 40rem * 0.625;
+  max-width: 80%;
+  height: auto;
+  min-height: 20em;
 
-  margin-top: 1.5rem;
   @media screen and (min-width: $tablet) {
-    margin-top: 2rem;
-    height: 28rem;
+    max-width: 85%;
+    margin-top: 1rem;
+    height: auto;
   }
   @media screen and (min-width: $notebook) {
     margin: 0;
     max-height: 60rem;
     height: 80%;
+    max-width: 90%;
   }
   @media screen and (min-width: $laptop) {
     margin: 0;
     max-height: 65rem;
     height: 82.5%;
+    max-width: 95%;
   }
   @media screen and (min-width: $desk) {
     margin: 0;

@@ -1,28 +1,42 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <AppNav :nav_links="nav_links"></AppNav>
+
+    <router-view msg="Welcome to Your Vue.js App" />
+    <FooterPage />
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppNav from "@/components/NavBar.vue";
+import FooterPage from "@/components/Footer.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { AppNav, FooterPage },
+  data() {
+    return {
+      nav_links: [
+        {
+          name: "Inicio",
+          rutaName: "Home",
+        },
+        {
+          name: "Horarios",
+          rutaName: "RentPage",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
+@import "@/assets/styles/normalize";
+@import "@/assets/styles/base.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

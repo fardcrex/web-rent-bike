@@ -1,0 +1,15 @@
+$color-primary: #5068a9;
+$color-secondary: #86a6df; // hsl(253, 40%, 97%);
+$color-third: #324e7b; // hsl(253, 40%, 97%);
+$color-bg: #f8f8f8; // hsl(253, 40%, 97%);
+
+$color-degrado: linear-gradient(-225deg, #2cd8d5 0%, #6b8dd6 48%, #8e37d7 100%);
+
+$color-text: #f8f8f8;
+$color-text-dark: #324e7b;
+
+//Media Query
+$tablet: 540px;
+$notebook: 814px;
+$laptop: 1025px;
+$desk: 1500px;

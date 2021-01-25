@@ -1,0 +1,100 @@
+@import "@/assets/styles/style.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("./assets/fonts/Alegreya/alegreya-regular-webfont.eot");
+  src: url("./assets/fonts/Alegreya/alegreya-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Alegreya/alegreya-regular-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/Alegreya/alegreya-regular-webfont.woff") format("woff"),
+    url("./assets/fonts/Alegreya/alegreya-regular-webfont.ttf")
+      format("truetype"),
+    url("./assets/fonts/Alegreya/alegreya-regular-webfont.svg#alegreyaregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alegreya";
+  src: url("./assets/fonts/Alegreya_bold/alegreya-bold-webfont.eot");
+  src: url("./assets/fonts/Alegreya_bold/alegreya-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Alegreya_bold/alegreya-bold-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/Alegreya_bold/alegreya-bold-webfont.woff")
+      format("woff"),
+    url("./assets/fonts/Alegreya_bold/alegreya-bold-webfont.ttf")
+      format("truetype"),
+    url("./assets/fonts/Alegreya_bold/alegreya-bold-webfont.svg#alegreyabold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "source_sans_proregular";
+  src: url("./assets/fonts/source_sans_pro/sourcesanspro-regular-webfont.eot");
+  src: url("./assets/fonts/source_sans_pro/sourcesanspro-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/source_sans_pro/sourcesanspro-regular-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/source_sans_pro/sourcesanspro-regular-webfont.woff")
+      format("woff"),
+    url("./assets/fonts/source_sans_pro/sourcesanspro-regular-webfont.ttf")
+      format("truetype"),
+    url("./assets/fonts/source_sans_pro/sourcesanspro-regular-webfont.svg#source_sans_proregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$text-font-title: alegreya, sans-serif;
+$text-font-parrafo: source_sans_proregular, sans-serif;
+
+html {
+  font-size: 16px;
+}
+body {
+  box-sizing: border-box;
+
+  background-color: $color-bg;
+  font-family: $text-font-parrafo;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  font-family: $text-font-parrafo;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $text-font-title;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.6em;
+}
+/* img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+ */

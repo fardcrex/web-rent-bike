@@ -15,8 +15,13 @@ const routes = [
     component: Home,
   },
   {
-    path: "/renta-de-bicletas",
+    path: "/rentas",
     name: "RentPage",
+    component: RentPage,
+  },
+  {
+    path: "/horarios",
+    name: "Horario",
     component: RentPage,
   },
 

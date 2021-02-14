@@ -11,8 +11,9 @@
         <ManBike class="svg-imagen" />
       </template>
       <template v-slot:botons>
+        <BottonDemo />
+        <div class="box"></div>
         <BottonApk />
-
       </template>
     </SectionTitle>
 
@@ -22,9 +23,10 @@
 <script>
 import ManBike from "@/components-svg/ManBike.vue";
 import BottonApk from "@/components/BottonApk.vue";
+import BottonDemo from "@/components/BottonDemo.vue";
 import SectionTitle from "@/components/SectionFirst.vue";
 export default {
-  name: "HelloWorld",
+  name: "Home",
   props: {
     msg: String,
   },
@@ -32,6 +34,7 @@ export default {
     SectionTitle,
     ManBike,
     BottonApk,
+    BottonDemo,
   },
   data() {
     return {
@@ -52,7 +55,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "@/assets/styles/style.scss";
-
+.box {
+  height: 1.5rem;
+}
 .svg-imagen {
   max-width: 80%;
   height: auto;

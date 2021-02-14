@@ -23,7 +23,7 @@ export default {
           rutaName: "Home",
         },
         {
-          name: "Horarios",
+          name: "Mis Rentas",
           rutaName: "RentPage",
         },
       ],

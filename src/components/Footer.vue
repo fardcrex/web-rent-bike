@@ -29,6 +29,14 @@
           href="https://www.flaticon.es/"
           title="Flaticon"
         >www.flaticon.es</a></div>
+      <div>Iconos diseñados por <a
+          href="https://www.flaticon.es/autores/eucalyp"
+          title="Eucalyp"
+        >Eucalyp</a> from <a
+          href="https://www.flaticon.es/"
+          title="Flaticon"
+        >www.flaticon.es</a></div>
+
     </div>
   </footer>
 </template>
@@ -65,11 +73,11 @@ export default {};
 }
 
 .custom-shape-divider-bottom-1611543117 .shape-fill {
-  fill: #86a6df;
+  fill: $color-secondary;
 }
 
 /** For mobile devices **/
-@media (max-width: 767px) {
+@media (max-width: $notebook) {
   .custom-shape-divider-bottom-1611543117 svg {
     width: calc(126% + 1.3px);
     height: 72px;

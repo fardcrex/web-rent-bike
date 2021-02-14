@@ -6,7 +6,7 @@
         <div class="nav-brand">
           <a href="/">
             <img
-              src="../assets/Logo.png"
+              src="../assets/logo.png"
               alt=""
             >
           </a>

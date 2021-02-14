@@ -1,5 +1,8 @@
 <template>
-  <a download="nubes">
+  <a
+    href="app-rent-bike.apk"
+    download="app-rent-bike.apk"
+  >
     <div class="button">
       <img
         src="../assets/android.png"

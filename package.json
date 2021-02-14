@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "emulators":"firebase emulators:start --import=./data-path --export-on-exit",
+    "emul":"firebase emulators:start --import=./data-path --export-on-exit",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },

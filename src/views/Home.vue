@@ -39,8 +39,6 @@ export default {
   data() {
     return {
       SectionFirstData: {
-        linkApp:
-          "https://play.google.com/store/apps/details?id=app.dinamo.dinamo&hl=es&fbclid=IwAR0XT4Gf7vyDmZFqHyBUW5hw-hzlIdrqZTPgdoS_L13pjzWXXYZhVs25b5c",
         tituloTop: "Elige un horario",
         tituloBottom: "y renta una bicicleta",
         cuerpo: `
@@ -60,9 +58,10 @@ export default {
 }
 .svg-imagen {
   max-width: 80%;
-  height: auto;
-  min-height: 20em;
-
+  height: 35vh;
+  padding-top: 1rem;
+  min-height: 17em;
+  max-height: 20em;
   @media screen and (min-width: $tablet) {
     max-width: 85%;
     margin-top: 1rem;

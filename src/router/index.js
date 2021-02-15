@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 
 import Home from "@/views/Home.vue";
 import RentPage from "@/views/RentPage.vue";
+import HorariosPage from "@/views/HorariosPage.vue";
 /*
  */
 
@@ -22,7 +23,7 @@ const routes = [
   {
     path: "/horarios",
     name: "Horario",
-    component: RentPage,
+    component: HorariosPage,
   },
 
   // { path: "*", component: () => import("../views/404Page.vue") },

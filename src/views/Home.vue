@@ -1,6 +1,6 @@
 <template>
   <div class="container_page">
-    <SectionTitle
+    <SectionFirst
       class="section1"
       :tituloTop="SectionFirstData.tituloTop"
       :tituloBottom="SectionFirstData.tituloBottom"
@@ -15,7 +15,7 @@
         <div class="box"></div>
         <BottonApk />
       </template>
-    </SectionTitle>
+    </SectionFirst>
 
   </div>
 </template>
@@ -24,14 +24,14 @@
 import ManBike from "@/components-svg/ManBike.vue";
 import BottonApk from "@/components/BottonApk.vue";
 import BottonDemo from "@/components/BottonDemo.vue";
-import SectionTitle from "@/components/SectionFirst.vue";
+import SectionFirst from "@/components/SectionFirst.vue";
 export default {
   name: "Home",
   props: {
     msg: String,
   },
   components: {
-    SectionTitle,
+    SectionFirst,
     ManBike,
     BottonApk,
     BottonDemo,
@@ -40,9 +40,9 @@ export default {
     return {
       SectionFirstData: {
         tituloTop: "Elige un horario",
-        tituloBottom: "y renta una bicicleta",
+        tituloBottom: "y renta un ciclista",
         cuerpo: `
-          Mini sistema para la renta de bicicletas para los distintos horarios que hay entre las 8:00 am y 8:00pm. 
+         Mini sistema para la renta de ciclistas en tiempo real con distintos horarios que van desde las 8:00 am hasta las 8:00 pm en GTM-5. 
           Disponible tanto para Web y Móvil (Android).`,
       },
     };

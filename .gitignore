@@ -24,4 +24,5 @@ firestore-debug.log*
 *.sln
 *.sw?
 
-src/firebase.js
+
+src/config.js

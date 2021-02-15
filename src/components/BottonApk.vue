@@ -1,6 +1,6 @@
 <template>
   <a
-    href="app-rent-bike.apk"
+    href="app_rent_bike.apk"
     download="app-rent-bike.apk"
   >
     <div class="button">

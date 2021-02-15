@@ -8,17 +8,19 @@
 export default {
   data() {
     return {
-      tittle: "Renta de Bicleta",
+      tittle: "Por ahora solo en la versión móvil",
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/style.scss";
 .container {
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: $color-primary;
 }
 </style>

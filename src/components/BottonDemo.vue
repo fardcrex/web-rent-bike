@@ -21,18 +21,10 @@
 </template>
 
 <script>
-import { getDataPrueba } from "@/data_services/prueba_firestore.js";
 export default {
   methods: {
     async onPress() {
-      console.log("doc");
-      //  this.$router.push({ name: "Horario" });
-      try {
-        const doc = await getDataPrueba();
-        console.log(doc);
-      } catch (error) {
-        console.log(error);
-      }
+      this.$router.push({ name: "Horario" });
     },
   },
 };

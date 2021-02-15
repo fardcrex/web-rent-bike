@@ -21,10 +21,7 @@ export default {
   props: {
     tituloTop: { type: String, default: "Título por defecto" },
     tituloBottom: { type: String, default: "Título por defecto" },
-    cuerpo: {
-      type: String,
-      default: "Sin Contenido",
-    },
+    cuerpo: { type: String, default: "Sin Contenido" },
   },
 };
 </script>

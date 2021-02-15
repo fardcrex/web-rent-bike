@@ -1,5 +1,8 @@
 import { db } from "@/firebase";
 
 export const getDataPrueba = function() {
-  return db.collection("data").get();
+  return db
+    .collection("config")
+    .doc("init")
+    .get();
 };

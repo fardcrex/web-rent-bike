@@ -17,7 +17,7 @@ npm run serve
 ```
 
 ```
-npm run emulators
+npm run emul
 ```
 
 ### Compiles and minifies for production

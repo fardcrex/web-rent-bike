@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 
 import Home from "@/views/Home.vue";
 import RentPage from "@/views/RentPage.vue";
+import InfoPage from "@/views/InfoPage.vue";
 import HorariosPage from "@/views/HorariosPage.vue";
 /*
  */
@@ -25,8 +26,13 @@ const routes = [
     name: "Horario",
     component: HorariosPage,
   },
+  {
+    path: "/info",
+    name: "Info",
+    component: InfoPage,
+  },
 
-  // { path: "*", component: () => import("../views/404Page.vue") },
+  { path: "*", component: Home },
 ];
 
 const router = new VueRouter({

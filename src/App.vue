@@ -23,6 +23,10 @@ export default {
           rutaName: "Home",
         },
         {
+          name: "Info",
+          rutaName: "Info",
+        },
+        {
           name: "Mis Rentas",
           rutaName: "RentPage",
         },

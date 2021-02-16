@@ -34,14 +34,14 @@ export default {
       featuresBase: [
         "- Visualización de ciclistas disponibles en tiempo real.",
         "- Podrás rentar un ciclista por horario.",
-        "- No se podrá rentar si no hay ciclistas disponibles.",
-        "- Si has rentado en horario se visulizará una franja verde.",
-        "- Si no se puede rentar visulizará con una franja roja.",
+        "- No podras rentar si no hay ciclistas disponibles.",
+        "- Si has rentado se visulizará con una franja verde.",
+        "- Si no se puede rentar se visulizará con una franja roja.",
       ],
       featuresApp: [
-        "- De acuerdo a la hora(Gtm-5) se podrá visualizar si es para ese mismo día o el día siguiente (en tiempo real).",
-        "- Si un horario acaba su hora se reinicia su contador de ciclistar disponibles en tiempo real.",
-        "- Tener una ventana de todas tus rentas vigentes.",
+        "- Etiquetas de 'Hoy' o 'Mañana' de acuerdo a la hora (Gtm-5) en tiempo real.",
+        "- Los contadores de disponibilidad se reinician automaticamente.",
+        "- Tener una ventana con todas tus rentas vigentes.",
         "- Recordatorio de cuanto tiempo falta para que comienze o termine tus rentas en tiempo real.",
       ],
     };
@@ -80,5 +80,8 @@ h1 {
 .lista {
   padding: 1rem 0;
   text-align: left;
+}
+li {
+  padding: 0.8rem 0;
 }
 </style>
